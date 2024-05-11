@@ -1,7 +1,7 @@
 # NASSCOM-VSD-SoC-Design-Program
 Explore the ASIC design flow using tools like Openlane and the Google-Sky Water collaboration's 130nm process design kit (PDK). Led by industry leader Kunal Ghosh, this course equips with the skills to craft standard cells, navigate the Physical Design domain, and generate GDSII files.
 # Contents
- 1) Day-1- [introdu](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/edit/main/README.md#inception-of-open-source-eda-openlane-and-sky130-pdk)
+ 1) Day-1- [introdu](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/blob/main/README.md#inception-of-open-source-eda-openlane-and-sky130-pdk)
 
 
 
