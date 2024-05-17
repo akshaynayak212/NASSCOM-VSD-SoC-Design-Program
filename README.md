@@ -69,8 +69,22 @@ In everyday use, we use apps to work with hardware. System software helps apps t
 **Compiler**: The compiler turns this language into instructions for the hardware  i.e .exe file
 
 **Assembler**: The assembler turns these instructions into the binary coded language by which hardware does the operations.
-
+<br>
 **<li>Components of open-source digital asic design </li>**
+<br>
+![WhatsApp Image 2024-05-17 at 5 27 31 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/1bd13b83-370d-4cd0-bb20-1fee9153c474)
+<br>
+
+
+
+
+
+
+
+
+
+![WhatsApp Image 2024-05-17 at 5 27 32 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/baadb06c-c315-4508-9da1-66bee6fe2a78)
+
 
 
 
