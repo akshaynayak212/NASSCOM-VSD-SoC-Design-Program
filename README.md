@@ -4,7 +4,7 @@ Exploring the ASIC design flow using tools like Openlane and the Google-Sky Wate
 #### <b>Note :</b> <i>All the images included in this repository are sourced from the VLSI System Design's SoC Design course.</i>
 [VLSI SYSTEM DESIGN (VSD)](https://www.vlsisystemdesign.com/)
 ## Table of contents :
-    - DAY -1 : INTRODUCTION
+    - DAY-1 : INTRODUCTION
         - 
                          
 
@@ -15,9 +15,7 @@ Exploring the ASIC design flow using tools like Openlane and the Google-Sky Wate
 
 
 
-## DAY 1 : 
-### Lecture 1 
-<b>what I learnt:</b> 
+## DAY 1 : INTRODUCTION
 
 ####  <li> Introduction to QFN-48 Package, chip, pads, core, die and IPs </li>
 
@@ -26,7 +24,17 @@ Exploring the ASIC design flow using tools like Openlane and the Google-Sky Wate
  ![Screenshot (76)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/68003ba1-02c2-47d7-b254-c2f73ac0dad8)
 
 ![chip](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/cd672f2a-d14b-4343-8e7c-c2ec1817d560)
+<br>
+ 
+ <li> Chip Packaging and Components </li>
+ <br>
+- The places that make chips, called <b>'FOUNDRY'</b>, are really important for how well chips work.
+<br>
+- <b>'MACROS'</b> are digital parts inside chips that make them work better.
 
+<br>
+
+ <br>
  
 ![components (2)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/eaeac9c5-ca55-4910-b356-49922e088547)
 
@@ -40,7 +48,24 @@ Exploring the ASIC design flow using tools like Openlane and the Google-Sky Wate
 
    ![components (1)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/fa09ff1c-d118-45dc-84b9-68214bddaa6f)
 
+<br>
 
+<li><b>Introduction to RISC-V </li></b>
+<br>
+    
+**ISA (Instruction Set Architecture)**: ISA helps software talk to hardware. When we write code in languages like C or Java, computers need a special language called machine code. ISA translates our code into machine code so computers can understand it. RISC-V is the latest version of this translator.
+
+<br>
+
+**From Software to Hardware**:
+
+In everyday use, we use apps to work with hardware. System software helps apps talk to hardware. This happens in a few steps:
+
+**Operating System (OS)**: The OS handles tasks like managing files and memory. It turns app code into a language that a hardware can understand.
+
+**Compiler**: The compiler turns this language into instructions for the hardware  i.e .exe file
+
+**Assembler**: The assembler turns these instructions into the binary coded language by which hardware does the operations.
 
 
 
