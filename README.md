@@ -213,16 +213,18 @@ It'll take a while (1-2 min) to perform synthesis but once it's done,we will see
 
 
 **<li>Characterization of the synthesis results  </li>**
-
 <br>
 
+![Screenshot from 2024-05-18 00-11-19](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/3b627411-b7c4-47e0-8431-1cff9ba2bb84)
+
 <br>
-From the  above image data of synthesis obtainted , total number of counter D flip-flops is **1613** and the total number of cells is **18036**.
+From the  above image,data of synthesis obtainted , total number of counter D flip-flops is **1613** and the total number of cells is **18036**.
 The flipflop percentage is obtained by formula i.e **Flop Ratio = ((no of D_flipflops) / (Total no of cells))100**
 so we get Flop ratio =(1613/18036)*100 0= 8.94 %.
 
 Before running, the result folder was empty. Now, after running synthesis, we can see that ABC has mapped everything.
 <br>
+![Screenshot from 2024-05-17 23-59-16](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/94329035-180c-4444-9273-d16e5a606c6e)
 
 <br>
 
