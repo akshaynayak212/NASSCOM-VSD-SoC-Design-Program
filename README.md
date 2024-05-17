@@ -223,7 +223,7 @@ From the  above image,data of synthesis obtainted , total number of counter D fl
 The flipflop percentage is obtained by formula i.e **Flop Ratio = ((no of D_flipflops) / (Total no of cells))100**
 so we get Flop ratio =(1613/18036)*100 0= 8.94 %.
 
-Before running, the result folder was empty. Now, after running synthesis, we can see that ABC has mapped everything.
+Before running, the result folder was empty. Now, after running synthesis, we can see that ABC has mapped everything in the reports folder.
 
 <br>
 
