@@ -26,8 +26,6 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
  
  ![Screenshot (76)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/68003ba1-02c2-47d7-b254-c2f73ac0dad8)
 
-![chip](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/cd672f2a-d14b-4343-8e7c-c2ec1817d560)
-<br>
  
  <li> Chip Packaging and Components </li>
  <br>
@@ -70,20 +68,32 @@ In everyday use, we use apps to work with hardware. System software helps apps t
 
 **Assembler**: The assembler turns these instructions into the binary coded language by which hardware does the operations.
 <br>
+
 **<li>Components of open-source digital asic design </li>**
 <br>
 ![WhatsApp Image 2024-05-17 at 5 27 31 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/1bd13b83-370d-4cd0-bb20-1fee9153c474)
 <br>
 
+To design a Open Source Digital ASIC, Components are :
+
+**(1) RTL Designs**
+
+**(2) EDA Tools**
+
+**(3) PDK Data**
+
+Process Design Kit is PDK data which contains information about the manufacturing process. In 2020, Google collaborated with **SkyWater Technology** to release an **open-source FOSS 130nm** Production PDK.
+
+**<li>RTL2GDS Flow</li>**
 
 
 
 
 
 
+<br>
 
-
-![WhatsApp Image 2024-05-17 at 5 27 32 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/baadb06c-c315-4508-9da1-66bee6fe2a78)
+Above shows simplified RTL to GDSII flow.
 
 
 
