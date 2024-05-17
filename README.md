@@ -4,12 +4,14 @@ Exploring the ASIC design flow using tools like Openlane and the Google-Sky Wate
 
 Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-SOC and design.
 <br>
+
 #### <b>Note :</b> <i>All the images included in this repository are sourced from the VLSI System Design's SoC Design course.</i>
 [VLSI SYSTEM DESIGN (VSD)](https://www.vlsisystemdesign.com/)
 ## Table of contents :
-    - DAY-1 : INTRODUCTION
-        - 
-                         
+    - DAY-1 : - INTRODUCTION 
+              - OPENLANE AND STRIVE CHIPSETS
+  
+                  
 
 
 
@@ -18,7 +20,9 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 
 
 
-## DAY 1 : INTRODUCTION
+## DAY 1 : 
+
+### INTRODUCTION
 
 ####  <li> Introduction to QFN-48 Package, chip, pads, core, die and IPs </li>
 
@@ -115,6 +119,11 @@ Once the clock is set up, we connect the rest of the signals. We use the remaini
 Finally, we check if everything is correct. We make sure the design follows the rules (Design Rule Check - DRC), matches the plan (Layout Vs. Schematic - LVS), and meets timing requirements (Static Timing Analysis - STA).
 
 
+## OPENLANE AND STRIVE CHIPSETS
+
+OpenLane began as an open-source project aiming to facilitate a genuine open-source tape-out experiment. It originated from e-fabless and serves as a platform that incorporates various tools like **Yosys, OpenRoad, Magic, KLlayout**, and other open-source tools. OpenLane streamlines the different stages of silicon implementation, making them easier to understand and work with. At e-fabless, they have a series of SOC (System on Chip) designs called Strive. Strive SOCs are entirely open, featuring open PDK (Process Design Kit), open RTL (Register Transfer Level), and open EDA (Electronic Design Automation) tools.
+
+The Main aim of Openlane is to **produce clean GDSII without human intervention.**
 
 
 
