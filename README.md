@@ -34,8 +34,7 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
    - Looked at an Arduino board to understand why its main 'chip' is a big deal.
    - Saw how this chip, known as the microcontroller unit (MCU), runs everything on the board, like reading sensors and controlling lights.
    - Noticed how VLSI tech helps make these chips, making gadgets like Arduinos possible.
-   - The Arduino Microcontroller Board comprises various elements like the microprocessor, voltage regulator, I/O pins, and communication interfaces. The microprocessor, highlighted , acts as the brain, executing instructions and managing the board's functions. The below provided image shows an Arduino Microcontroller Board, with a specific focus on the Microprocessor (chip). 
-
+   - The Arduino Microcontroller Board comprises various elements like the microprocessor, voltage regulator, I/O pins, and communication interfaces. The microprocessor, highlighted , acts as the brain, executing instructions and managing the board's functions. 
  
  <li> Chip Packaging and Components </li>
  <br>
@@ -44,10 +43,6 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 - <b>'MACROS'</b> are digital parts inside chips that make them work better.
 
 <br>
-
- <br>
- 
-![components (2)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/eaeac9c5-ca55-4910-b356-49922e088547)
 
  There are three main components ,they are:
  
@@ -61,23 +56,6 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 
 <br>
 
-<li><b>Introduction to RISC-V </li></b>
-<br>
-    
-**ISA (Instruction Set Architecture)**: ISA helps software talk to hardware. When we write code in languages like C or Java, computers need a special language called machine code. ISA translates our code into machine code so computers can understand it. RISC-V is the latest version of this translator.
-
-<br>
-
-**From Software to Hardware**:
-
-In everyday use, we use apps to work with hardware. System software helps apps talk to hardware. This happens in a few steps:
-
-**Operating System (OS)**: The OS handles tasks like managing files and memory. It turns app code into a language that a hardware can understand.
-
-**Compiler**: The compiler turns this language into instructions for the hardware  i.e .exe file
-
-**Assembler**: The assembler turns these instructions into the binary coded language by which hardware does the operations.
-<br>
 
 **<li>Components of open-source digital asic design </li>**
 <br>
@@ -218,7 +196,7 @@ next command - **cd date created** for ex: in my case its **cd 16-05_16-20** it 
 
 ### GETTING STARTED - SYNTHESIZING THE DESIGN :
 
-Now we need to perform  the Synthesis process on the design. command used is **run_synthesis**.
+Next step is we need to perform the Synthesis process on the design. command used is **run_synthesis**.
 <br>
 ![Screenshot from 2024-05-16 22-07-55](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/27561569-d3c9-4abd-8311-6288d7f01e15)
 
@@ -227,14 +205,28 @@ Now we need to perform  the Synthesis process on the design. command used is **r
 
 
 
-It'll take a while (1-2 min) to perform synthesis but once it's done,we will see a message saying **'Synthesis completed successfully'**.
+It'll take a while (1-2 min) to perform synthesis but once it's done,we will see a message saying **'Synthesis was successful'**.
 <br>
 ![Screenshot from 2024-05-16 22-09-52](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/2651d395-74a3-4aca-b964-aeb1106d1efb)
 
 <br>
 
 
-<li>Characterization of the synthesis results  </li>
+**<li>Characterization of the synthesis results  </li>**
+
+<br>
+
+<br>
+From the  above image data of synthesis obtainted , total number of counter D flip-flops is **1613** and the total number of cells is **18036**.
+The flipflop percentage is obtained by formula i.e **Flop Ratio = ((no of D_flipflops) / (Total no of cells))100**
+so we get Flop ratio =(1613/18036)*100 0= 8.94 %.
+
+Before running, the result folder was empty. Now, after running synthesis, we can see that ABC has mapped everything.
+<br>
+
+<br>
+
+
 
 
 
