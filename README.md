@@ -86,14 +86,34 @@ Process Design Kit is PDK data which contains information about the manufacturin
 
 **<li>RTL2GDS Flow</li>**
 
-
-
-
-
+![WhatsApp Image 2024-05-17 at 5 27 32 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/4316462c-f36c-44a2-a9d9-406bd5c7a295)
 
 <br>
 
-Above shows simplified RTL to GDSII flow.
+Above shows simplified RTL to GDSII flow.Steps invloved are explained as follows:
+
+**Step 1 - Synthesis:** -In thi stage RTL is converted to gate level netlist using components from the Standard Cell Library. These components, known as Standard Cells, have regular layouts with varying widths.
+
+**Step 2 - Floor Planning & Power Planning: :** In floor planning, we decide where to put components on the chip to make it as small as possible. We also plan where to put inputs, outputs, dimensions and power connections.
+
+In power planning, the power supply network (VDD & GND) using special components of chip will be laid out.  
+
+**step 3 - Placement:**
+
+During placement, we put components and standard cells in their designated spots on the chip. We do this in two steps: first Global Placement, then Detailed Placement.
+
+**step 4 - CTS (Clock Tree Synthesis):**
+
+Before connecting signals, we organize the clock signals to avoid timing issues. We use special structures to make sure the clock arrives at different parts of the chip at the same time.
+
+**step 5 - Routing:**
+
+Once the clock is set up, we connect the rest of the signals. We use the remaining metal layers to make these connections. First, we plan out the routes (Global Routing), then we actually make the connections (Detailed Routing).
+
+**step 6 - Sign-off:**
+
+Finally, we check if everything is correct. We make sure the design follows the rules (Design Rule Check - DRC), matches the plan (Layout Vs. Schematic - LVS), and meets timing requirements (Static Timing Analysis - STA).
+
 
 
 
