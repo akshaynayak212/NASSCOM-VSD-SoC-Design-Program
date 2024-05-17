@@ -1,6 +1,9 @@
 # NASSCOM-VSD-SoC-Design-Program
 Exploring the ASIC design flow using tools like Openlane and the Google-Sky Water collaboration's 130nm process design kit (PDK). Led by industry leader Kunal Ghosh, this course equips with the skills to craft standard cells, navigate the Physical Design domain, and generate GDSII files.
 
+
+Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-SOC and design.
+<br>
 #### <b>Note :</b> <i>All the images included in this repository are sourced from the VLSI System Design's SoC Design course.</i>
 [VLSI SYSTEM DESIGN (VSD)](https://www.vlsisystemdesign.com/)
 ## Table of contents :
@@ -66,6 +69,10 @@ In everyday use, we use apps to work with hardware. System software helps apps t
 **Compiler**: The compiler turns this language into instructions for the hardware  i.e .exe file
 
 **Assembler**: The assembler turns these instructions into the binary coded language by which hardware does the operations.
+
+**<li>Components of open-source digital asic design </li>**
+
+
 
 
 
