@@ -169,7 +169,7 @@ Now enter the follwing commands to invoke the openlane in terminal i.e using bas
 
 -bash-4.2$ **pwd** <br>
 /OpenLANE_flow <br>
--ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
+**-ls -ltr** ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
 <br>
 
 ![Screenshot from 2024-05-16 21-51-13](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/114d3965-cc2a-49a9-b24b-a77625918828)
@@ -196,11 +196,11 @@ commands is as follows:
 
 <br>
 
-next commands :  - **cd designs**
-                 - **cd picorv32a**
-                 - **ls -ltr**
+next commands :  - **cd designs**<br>
+                 - **cd picorv32a**<br>
+                 - **ls -ltr**<br>
 
-**picorv32a** contains files like config.tcl,sky130 tcl files,src, and new directory **runs** as been created by design setup asshown in below image
+**picorv32a** contains files like config.tcl,sky130 tcl files,src, and new directory **runs** as been created by design setup as shown in below image
 <br>
 ![Screenshot from 2024-05-16 22-04-18](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/edede503-cb1c-4c86-a98c-ebf498e0a890)
 <br>
