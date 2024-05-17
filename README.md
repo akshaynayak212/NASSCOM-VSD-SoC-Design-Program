@@ -150,3 +150,27 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 - "hd" represents high density, a specific variant.
 - The Sky130_fd_sc_hd variant includes various technology files such as Verilog, Spice, Techlef, Meglef, Mag, GDS, CDL, LIB, LEF, etc.
 - The techlef file provides layer information essential for the design process.
+
+  <br>
+
+<ul>
+    
+**<li>Directory order to invoke the tool OPENLANE </li>**
+
+Desktop/work/tools/openlane_working_dir/openlane
+
+In order to enter into BASH, by being in **OpenLane directory** we should use a command called **docker**. By using docker command we will enter into the Bash
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</ul>
