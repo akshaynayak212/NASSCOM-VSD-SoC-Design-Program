@@ -226,6 +226,7 @@ so we get Flop ratio =(1613/18036)*100 0= 8.94 %.
 Before running, the result folder was empty. Now, after running synthesis, we can see that ABC has mapped everything.
 
 <br>
+
 ![Screenshot from 2024-05-17 23-59-16](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/94329035-180c-4444-9273-d16e5a606c6e)
 
 <br>
