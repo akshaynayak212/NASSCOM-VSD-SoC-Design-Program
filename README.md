@@ -162,14 +162,14 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
     
 **<li>Directory order to invoke the tool OPENLANE </li>**
 
-Desktop/work/tools/openlane_working_dir/openlane
+**Desktop/work/tools/openlane_working_dir/openlane**
 
 In order to enter into BASH in terminal ,we must use a command **docker**. 
 
 Now enter the follwing commands to invoke the openlane in terminal i.e using bash programming:
 
--bash-4.2$ pwd
-/OpenLANE_flow
+-bash-4.2$ **pwd** <br>
+/OpenLANE_flow <br>
 -ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
 <br>
 
@@ -201,12 +201,12 @@ next commands :  - **cd designs**
                  - **cd picorv32a**
                  - **ls -ltr**
 
-**picorv32a** contains files like config.tcl,sky130 tcl files,src, and newly created **runs** folderas shown in below image
+**picorv32a** contains files like config.tcl,sky130 tcl files,src, and new directory **runs** as been created by design setup asshown in below image
 <br>
 ![Screenshot from 2024-05-16 22-04-18](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/edede503-cb1c-4c86-a98c-ebf498e0a890)
 <br>
 
-**runs** folder have been created in picorv32a directory that includes the date on which we did design setup as shown in below image
+newly created **runs** folder in picorv32a directory includes the date on which we did design setup for ex : in my case its **16-05_16-20** as shown in below image
 <br>
 
 ![Screenshot from 2024-05-16 22-05-11](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/846be161-3489-4919-89e6-f6a8fcebea2d)
