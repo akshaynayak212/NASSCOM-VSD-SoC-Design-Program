@@ -35,8 +35,6 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
    - Saw how this chip, known as the microcontroller unit (MCU), runs everything on the board, like reading sensors and controlling lights.
    - Noticed how VLSI tech helps make these chips, making gadgets like Arduinos possible.
    - The Arduino Microcontroller Board comprises various elements like the microprocessor, voltage regulator, I/O pins, and communication interfaces. The microprocessor, highlighted , acts as the brain, executing instructions and managing the board's functions. The below provided image shows an Arduino Microcontroller Board, with a specific focus on the Microprocessor (chip). 
- 
- ![Screenshot (76)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/68003ba1-02c2-47d7-b254-c2f73ac0dad8)
 
  
  <li> Chip Packaging and Components </li>
