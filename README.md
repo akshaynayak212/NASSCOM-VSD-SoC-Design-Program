@@ -220,6 +220,7 @@ next command - **cd date created** for ex: in my case its **cd 16-05_16-20** it 
 
 Now we need to perform  the Synthesis process on the design. command used is **run_synthesis**.
 <br>
+![Screenshot from 2024-05-16 22-07-55](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/27561569-d3c9-4abd-8311-6288d7f01e15)
 
 
 <br>
@@ -228,6 +229,7 @@ Now we need to perform  the Synthesis process on the design. command used is **r
 
 It'll take a while (1-2 min) to perform synthesis but once it's done,we will see a message saying **'Synthesis completed successfully'**.
 <br>
+![Screenshot from 2024-05-16 22-09-52](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/2651d395-74a3-4aca-b964-aeb1106d1efb)
 
 <br>
 
