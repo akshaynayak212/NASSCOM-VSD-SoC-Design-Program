@@ -173,14 +173,14 @@ Now enter the follwing commands to invoke the openlane in terminal i.e using bas
 -ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
 <br>
 
-
+![Screenshot from 2024-05-16 21-51-13](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/114d3965-cc2a-49a9-b24b-a77625918828)
 
 <br>
 
 next enter the command **./flow.tcl -interactive**  ,  Now OpenLane tool is opened & invoked as shown in below image. next is to input the required package by command **pacakage require openlane 0.9**
 <br>
 
-
+![Screenshot from 2024-05-16 21-51-25](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/67f0dac5-66a8-4b1e-b52b-f44b000b432d)
 <br>
 
 **<li>Design Preparation Setup</li>**
@@ -193,6 +193,7 @@ commands is as follows:
 
 <br>
 
+![Screenshot from 2024-05-16 21-51-50](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/9a9f3a3d-cd47-4f99-b821-b1a2e94da9c8)
 
 <br>
 
@@ -202,20 +203,26 @@ next commands :  - **cd designs**
 
 **picorv32a** contains files like config.tcl,sky130 tcl files,src, and newly created **runs** folderas shown in below image
 <br>
-
+![Screenshot from 2024-05-16 22-04-18](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/edede503-cb1c-4c86-a98c-ebf498e0a890)
 <br>
 
 **runs** folder have been created in picorv32a directory that includes the date on which we did design setup as shown in below image
 <br>
 
-
+![Screenshot from 2024-05-16 22-05-11](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/846be161-3489-4919-89e6-f6a8fcebea2d)
 <br>
 
 next command - **cd date created** for ex: in my case its **cd 16-05_16-20** it includes tmp,results,logs,config.tcl files extra
 <br>
-
-
+![Screenshot from 2024-05-16 22-05-43](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c3dc1007-1d11-4cd9-b2cc-42bc994f3dac)
 <br>
+
+
+
+
+
+
+
 
 
 
