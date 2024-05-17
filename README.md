@@ -5,13 +5,14 @@ Exploring the ASIC design flow using tools like Openlane and the Google-Sky Wate
 Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-SOC and design.
 <br>
 
-#### <b>Note :</b> <i>All the images included in this repository are sourced from the VLSI System Design's SoC Design course.</i>
+#### <b>Note :</b> <i>All the blockdiagrams and flow diagrams included in this repository are sourced from the VLSI System Design's SoC Design course.</i>
 [VLSI SYSTEM DESIGN (VSD)](https://www.vlsisystemdesign.com/)
 ## Table of contents :
     - DAY-1 : - INTRODUCTION 
               - OPENLANE AND STRIVE CHIPSETS
 
     - DAY-2 : - TOOL INVOCATION & OPERATION 
+              - GETTING STARTED - SYNTHESIZING THE DESIGN
   
                   
 
@@ -217,10 +218,23 @@ next command - **cd date created** for ex: in my case its **cd 16-05_16-20** it 
 ![Screenshot from 2024-05-16 22-05-43](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c3dc1007-1d11-4cd9-b2cc-42bc994f3dac)
 <br>
 
+### GETTING STARTED - SYNTHESIZING THE DESIGN :
+
+Now we need to perform  the Synthesis process on the design. command used is **run_synthesis**.
+<br>
+
+
+<br>
 
 
 
+It'll take a while (1-2 min) to perform synthesis but once it's done,we will see a message saying **'Synthesis completed successfully'**.
+<br>
 
+<br>
+
+
+<li>Characterization of the synthesis results  </li>
 
 
 
