@@ -10,6 +10,8 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 ## Table of contents :
     - DAY-1 : - INTRODUCTION 
               - OPENLANE AND STRIVE CHIPSETS
+
+    - DAY-2 : - TOOL INVOCATION & OPERATION 
   
                   
 
@@ -125,10 +127,26 @@ OpenLane began as an open-source project aiming to facilitate a genuine open-sou
 
 The Main aim of Openlane is to **produce clean GDSII without human intervention.**
 
+![WhatsApp Image 2024-05-17 at 8 33 23 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c4e5b99c-0109-45db-b56f-25274c4d4804)
 
+<br>
 
+**<li>OpenLANE ASIC design flow</li>**
 
+<br>
 
-
+![WhatsApp Image 2024-05-17 at 8 31 48 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f94a13ab-6cbe-4735-b360-619977aa5fd0)
 
 </ul>
+
+## DAY - 2 : 
+
+### TOOL INVOCATION & OPERATION:
+
+- We're using the Sky130_fd_sc_hd PDK variant.
+- "Sky130" refers to the process or node name.
+- "fd" indicates the foundry name, which is SkyWater foundry.
+- "sc" denotes standard cell library files.
+- "hd" represents high density, a specific variant.
+- The Sky130_fd_sc_hd variant includes various technology files such as Verilog, Spice, Techlef, Meglef, Mag, GDS, CDL, LIB, LEF, etc.
+- The techlef file provides layer information essential for the design process.
