@@ -98,7 +98,7 @@ Process Design Kit is PDK data which contains information about the manufacturin
 
 Above shows simplified RTL to GDSII flow.Steps invloved are explained as follows:
 
-**Step 1 - Synthesis:** -In thi stage RTL is converted to gate level netlist using components from the Standard Cell Library. These components, known as Standard Cells, have regular layouts with varying widths.
+**Step 1 - Synthesis:** -In thi stage RTL is converted to gate level netlist using components from the Standard Cell Library(SCL). These components, known as Standard Cells, have regular layouts with varying widths.
 
 **Step 2 - Floor Planning & Power Planning: :** In floor planning, we decide where to put components on the chip to make it as small as possible. We also plan where to put inputs, outputs, dimensions and power connections.
 
@@ -159,7 +159,61 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 
 Desktop/work/tools/openlane_working_dir/openlane
 
-In order to enter into BASH, by being in **OpenLane directory** we should use a command called **docker**. By using docker command we will enter into the Bash
+In order to enter into BASH in terminal ,we must use a command **docker**. 
+
+Now enter the follwing commands to invoke the openlane in terminal i.e using bash programming:
+
+-bash-4.2$ pwd
+/OpenLANE_flow
+-ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
+<br>
+
+
+
+<br>
+
+next enter the command **./flow.tcl -interactive**  ,  Now OpenLane tool is opened & invoked as shown in below image. next is to input the required package by command **pacakage require openlane 0.9**
+<br>
+
+
+<br>
+
+**<li>Design Preparation Setup</li>**
+
+We will be designing Picorv32a CPU.this is basically a design setup stage where merging of two LEF's files is done i.e cell level LEF and Technology level LEF 
+
+commands is as follows:
+
+**prep -design picorv32a**
+
+<br>
+
+
+<br>
+
+next commands :  - **cd designs**
+                 - **cd picorv32a**
+                 - **ls -ltr**
+
+**picorv32a** contains files like config.tcl,sky130 tcl files,src, and newly created **runs** folderas shown in below image
+<br>
+
+<br>
+
+**runs** folder have been created in picorv32a directory that includes the date on which we did design setup as shown in below image
+<br>
+
+
+<br>
+
+next command - **cd date created** for ex: in my case its **cd 16-05_16-20** it includes tmp,results,logs,config.tcl files extra
+<br>
+
+
+<br>
+
+
+
 
 
 
