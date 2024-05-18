@@ -268,13 +268,17 @@ formula is given by:
 ### STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
 
 Once synthesis is sucessful,next step is floorplan. we use command **run_floorplan**
+
 <br>
+
 ![Screenshot from 2024-05-16 22-16-03](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/7ace1039-925a-4a31-8e4d-09aa00d815a0)
 <br>
 
 This will create a folder inside **runs** folder of **picorv32a** directory.
 it will take a while to execute.once done we will get **PDN GENERATION IS SUCESSFUL** as shown in below image.
+
 <br>
+
 ![Screenshot from 2024-05-16 22-16-43](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/804cb295-a0af-49c8-b09f-9917d9dd50ab)
 <br>
 
