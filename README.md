@@ -164,10 +164,10 @@ docker
 Now enter the follwing commands to invoke the openlane in terminal i.e using bash programming:
 
 ```
--bash-4.2$ **pwd** <br>
-/OpenLANE_flow <br>
+-bash-4.2$ pwd
+/OpenLANE_flow 
 -ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
-<br>
+
 ```
 
 ![Screenshot from 2024-05-16 21-51-13](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/114d3965-cc2a-49a9-b24b-a77625918828)
@@ -201,9 +201,9 @@ prep -design picorv32a
 
 next commands :  
 ```
-cd designs <br>
-cd picorv32a <br>
-ls -ltr <br>
+cd designs
+cd picorv32a 
+ls -ltr 
 ```
 
 **picorv32a** contains files like config.tcl,sky130 tcl files,src, and new directory **runs** as been created by design setup as shown in below image
@@ -409,6 +409,43 @@ lets see the detail of horizontal and vertical pins , in tkcon window it shows t
 
 <br>
 </ul>
+
+
+### STEPS TO RUN PLACEMENT
+
+Once the Floorplanning is done sucessfully , the next step in the process is Placement. 
+To run the placement use the command
+```
+run_placement
+```
+<br>
+
+<br>
+
+It will take few seconds. once done it shows **Placement done sucessfully**
+
+<br>
+
+<br>
+
+Once Placement process is done , next step is to check whether the cells are placed correctly or not.by using **magic** tool.
+
+use the below command to view the standerd cells placement. image is shown below
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+```
+<br>
+
+
+
+<br>
+
+
+Zooom in (to zoom press z), we can see that the standard cells are all placed like gates,buffers, flip flops etc as shown in below image
+<br>
+
+<br>
 
 
 
