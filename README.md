@@ -356,20 +356,6 @@ we can see the die area, unit distance in micron.,unit distance in micron (1000)
 To see the actual layout after the floorplan ,go the folders as shown below:
 ```
 openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan
-
-    Screenshot from 2024-05-16 22-35-15
-    we will get the layout as shown in below image
-
-    Screenshot from 2024-05-16 22-36-41
-    To zoom in press left button of mouse then right button and press z
-    Screenshot from 2024-05-16 22-38-02
-
-    In order to know the details of any cell in the layout , just move the cursor to that cell and press S to select the cell and then in the window of tkcon enter the command "what". then it will displey the details of the selected cell. lets see the detail of horizontal and vertical pins , in tkcon window it shows that the pin is in the metal 3 for horizontal pins ,similarly for the vertical pins, we see that thepin is at metal 2. image is shown below.
-    Screenshot from 2024-05-16 22-40-09 Screenshot from 2024-05-16 22-40-20
-
-    Screenshot from 2024-05-16 22-42-19 Screenshot from 2024-05-16 22-42-35
-
-
 ```
 
 now we need to open the **magic** file by the  following command
@@ -420,12 +406,15 @@ run_placement
 ```
 <br>
 
+![Screenshot from 2024-05-17 09-22-55](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/5e59922a-9493-45d7-b4c1-f71c0b4eb2cc)
+
 <br>
 
 It will take few seconds. once done it shows **Placement done sucessfully**
 
 <br>
 
+![Screenshot from 2024-05-17 09-36-03](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/dec8479e-9890-4e03-a4fc-b86840239c27)
 <br>
 
 Once Placement process is done , next step is to check whether the cells are placed correctly or not.by using **magic** tool.
@@ -437,7 +426,9 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 <br>
 
+![Screenshot from 2024-05-17 10-04-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/0a8875be-cf67-428f-b654-f4719b12c44b)
 
+![Screenshot from 2024-05-17 10-04-44](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/3111e1b6-63f4-4f73-93f9-a2f4d795aac9)
 
 <br>
 
@@ -445,7 +436,12 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 Zooom in (to zoom press z), we can see that the standard cells are all placed like gates,buffers, flip flops etc as shown in below image
 <br>
 
+![Screenshot from 2024-05-17 10-10-05](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/b0cec0e9-19c5-4916-a758-31a092a9807f)
+
 <br>
+
+
+
 
 
 
