@@ -285,6 +285,8 @@ it will take a while to execute.once done we will get **PDN GENERATION IS SUCESS
 Next step is to view the **VMetal and HMetal** (vertical metal & horizontal metal) , this will be available in **config.tcl** of the newly created folder of floorplan in date's folder in runs directoy
 <br>
 
+![Screenshot from 2024-05-18 13-15-43](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/7a065019-0bea-4ee3-95fd-e00984747ae2)
+
 <br>
 
 now go to tmp folder from date created folder ,use this command
