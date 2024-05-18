@@ -117,7 +117,7 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 
 ### COMMANDS USED IN OpenLANE FLOW:
 
-
+```
 1. prep -design <design> -tag <tag> -config <config> -init_design_config -overwrite
 2. run_synthesis
 3. run_floorplan
@@ -132,6 +132,7 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 12. run_magic_antenna_check
 
 for fully automated run we can use command : **./flow.tcl -deisgn picorv32a**
+```
 
 
 ### TOOL INVOCATION & OPERATION:
@@ -154,20 +155,29 @@ for fully automated run we can use command : **./flow.tcl -deisgn picorv32a**
 
 **Desktop/work/tools/openlane_working_dir/openlane**
 
-In order to enter into BASH in terminal ,we must use a command **docker**. 
+In order to enter into BASH in terminal ,we must use a command 
+```
+docker
+```
 
 Now enter the follwing commands to invoke the openlane in terminal i.e using bash programming:
 
+```
 -bash-4.2$ **pwd** <br>
 /OpenLANE_flow <br>
 **-ls -ltr** ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
 <br>
+```
 
 ![Screenshot from 2024-05-16 21-51-13](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/114d3965-cc2a-49a9-b24b-a77625918828)
 
 <br>
 
-next enter the command **./flow.tcl -interactive**  ,  Now OpenLane tool is opened & invoked as shown in below image. next is to input the required package by command **pacakage require openlane 0.9**
+next enter the command 
+```
+**./flow.tcl -interactive**
+```
+Now OpenLane tool is opened & invoked as shown in below image. next is to input the required package by command **pacakage require openlane 0.9**
 <br>
 
 ![Screenshot from 2024-05-16 21-51-25](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/67f0dac5-66a8-4b1e-b52b-f44b000b432d)
@@ -178,8 +188,9 @@ next enter the command **./flow.tcl -interactive**  ,  Now OpenLane tool is open
 We will be designing Picorv32a CPU.this is basically a design setup stage where merging of two LEF's files is done i.e cell level LEF and Technology level LEF 
 
 commands is as follows:
-
+```
 **prep -design picorv32a**
+```
 
 <br>
 
@@ -187,9 +198,12 @@ commands is as follows:
 
 <br>
 
-next commands :  - **cd designs**<br>
-                 - **cd picorv32a**<br>
-                 - **ls -ltr**<br>
+next commands :  
+```
+**cd designs**<br>
+**cd picorv32a**<br>
+**ls -ltr**<br>
+```
 
 **picorv32a** contains files like config.tcl,sky130 tcl files,src, and new directory **runs** as been created by design setup as shown in below image
 <br>
@@ -209,8 +223,15 @@ next command - **cd date created** for ex: in my case its **cd 16-05_16-20** it 
 
 ### GETTING STARTED - SYNTHESIZING THE DESIGN :
 
-Next step is we need to perform the Synthesis process on the design. command used is **run_synthesis**.
+Next step is we need to perform the Synthesis process on the design. command used is
+
+```
+**run_synthesis**
+```
+
+
 <br>
+
 ![Screenshot from 2024-05-16 22-07-55](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/27561569-d3c9-4abd-8311-6288d7f01e15)
 
 
@@ -267,11 +288,15 @@ formula is given by:
 
 ### STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
 
-Once synthesis is sucessful,next step is floorplan. we use command **run_floorplan**
+Once synthesis is sucessful,next step is floorplan. we use command 
+```
+**run_floorplan**
+```
 
 <br>
 
 ![Screenshot from 2024-05-16 22-16-03](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/7ace1039-925a-4a31-8e4d-09aa00d815a0)
+
 <br>
 
 This will create a folder inside **runs** folder of **picorv32a** directory.
@@ -290,21 +315,32 @@ Next step is to view the **VMetal and HMetal** (vertical metal & horizontal meta
 <br>
 
 now go to tmp folder from date created folder ,use this command
-
+```
 **openlane/designs/picorv32a/runs/16-05_16-20/tmp/floorplan**
+```
 <br>
 
-use command **ls -ltr** <br>
+use command 
+```
+**ls -ltr** <br>
+```
+
 def files are available as shown in below image.
 <br>
 
 ![Screenshot from 2024-05-16 22-22-49](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/114478f0-b073-4a30-8c2a-8480149e8ccb)
+
 <br>
 
 
 
 
-we are interested in def file called **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.therefore the width of chip is 660.685 micrometer and height is 671.405 micrometer.
+we are interested in def file called **4-ioPlacer.def** open this file using command 
+```
+**less 4-ioPlacer.def**
+```
+
+we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.therefore the width of chip is 660.685 micrometer and height is 671.405 micrometer.
 
 <br>
 
@@ -314,8 +350,9 @@ we are interested in def file called **4-ioPlacer.def** open this file using com
 
 
 To see the actual layout after the floorplan ,go the folders as shown below:
-
+```
 **openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan**
+```
 
 now we need to open the **magic** file by the  following command
 <br>
