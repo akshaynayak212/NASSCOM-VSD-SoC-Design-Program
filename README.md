@@ -315,9 +315,11 @@ To see the actual layout after the floorplan ,go the folders as shown below:
 
 **openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan**
 
-now we need to open the **magic** file by the  following command <br>
+now we need to open the **magic** file by the  following command
+<br>
 
 **magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &**
+
 <br>
 
 ![Screenshot from 2024-05-16 22-35-15](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/9376ac56-c91e-4524-ab17-7d254282aa13)
@@ -338,9 +340,12 @@ lets see the detail of horizontal and vertical pins , in tkcon window it shows t
 ![Screenshot from 2024-05-16 22-40-09](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/e492e6b9-223c-4ae8-94f0-c2c774ff56f4)
 ![Screenshot from 2024-05-16 22-40-20](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f4cfea60-a78e-479a-ad9b-da645c1b3311)
 
+
 <br>
+
 ![Screenshot from 2024-05-16 22-42-19](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/cc2a9a61-fe67-44a8-bed4-f7f7467676d5)
 ![Screenshot from 2024-05-16 22-42-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/da1fd5a6-6a93-4f68-af1f-280602bc6f0d)
+
 <br>
 
 
