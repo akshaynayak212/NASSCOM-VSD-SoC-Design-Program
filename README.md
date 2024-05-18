@@ -297,7 +297,8 @@ def files are available as shown in below image.
 
 
 
-if we open this file, we can see all information about die area ,database units. def file is **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.
+
+we are interested in def file called **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.
 
 <br>
 
