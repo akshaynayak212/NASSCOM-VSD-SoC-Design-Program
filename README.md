@@ -10,9 +10,10 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 ## Table of contents :
     - DAY-1 : - INTRODUCTION 
               - OPENLANE AND STRIVE CHIPSETS
-
-    - DAY-2 : - TOOL INVOCATION & OPERATION 
+              - TOOL INVOCATION & OPERATION 
               - GETTING STARTED - SYNTHESIZING THE DESIGN
+
+    - DAY-2 : 
   
                   
 
@@ -27,7 +28,7 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 
 ### INTRODUCTION
 
-####  <li> Introduction to QFN-48 Package, chip, pads, core, die and IPs </li>
+In the DAY 1 lecture series 
 
    - Learned how VLSI technology packs tons of tiny transistors onto chips, making electronics faster, smaller, and cheaper.
 
