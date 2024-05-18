@@ -298,7 +298,7 @@ def files are available as shown in below image.
 
 
 
-we are interested in def file called **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.
+we are interested in def file called **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.therefore the width of chip is 660.685 micrometer and height is 671.405 micrometer.
 
 <br>
 
@@ -307,6 +307,32 @@ we are interested in def file called **4-ioPlacer.def** open this file using com
 <br>
 
 
+To see the actual layout after the floorplan ,go the folders as shown below:
+
+**openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan**
+
+now we need to open the **magic** file by the  following command <br>
+
+**magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &**
+
+we will get the layout as shown in below image
+<br>
+
+<br>
+To zoom in press left button of mouse then right button and press z 
+<br>
+
+<br>
+
+In order to know the details of any cell in the layout , just move the cursor to that cell and press **S** to select the cell and then in the window of **tkcon** enter the command **"what"**. then it will displey the details of the selected cell.
+lets see the detail of horizontal and vertical pins , in tkcon window it shows that the pin is in the metal 3 for horizontal pins ,similarly for the vertical pins, we see that thepin is at metal 2. image is shown below.
+<br>
+
+
+<br>
+
+
+<br>
 
 
 
