@@ -16,7 +16,7 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 
     - DAY-2 : - CHIP FLOOR PLANNING CONSIDERATION 
               - STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
-              - CONGESTION AWARE PLACEMENT USING REPLACE 
+              - STEPS TO RUN PLACEMENT
                   
 
 
@@ -319,8 +319,10 @@ To see the actual layout after the floorplan ,go the folders as shown below:
 
 now we need to open the **magic** file by the  following command
 <br>
+...
 
-**magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &**
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+...
 
 <br>
 
@@ -349,28 +351,7 @@ lets see the detail of horizontal and vertical pins , in tkcon window it shows t
 ![Screenshot from 2024-05-16 22-42-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/da1fd5a6-6a93-4f68-af1f-280602bc6f0d)
 
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 </ul>
+
+
+
