@@ -296,9 +296,13 @@ use command **ls -ltr** def files are available as shown in below image.
 
 
 if we open this file, we can see all information about die area ,database units. def file is **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405). it means 1 micron means 1000 databased units. so 660685 and 671405 are databased units. and if we devide this by 1000 then we can get the dimensions of chips in micrometer.
+
 <br>
+
 ![Screenshot from 2024-05-16 22-22-52](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/e4ac953f-3843-4189-815b-d21a0422cc44)
+
 <br>
+
 
 
 
