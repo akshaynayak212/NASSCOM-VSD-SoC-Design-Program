@@ -131,7 +131,7 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 11. run_netgen
 12. run_magic_antenna_check
 
-for fully automated run we can use command : **./flow.tcl -deisgn picorv32a**
+for fully automated run we can use command : ./flow.tcl -deisgn picorv32a
 ```
 
 
@@ -152,8 +152,9 @@ for fully automated run we can use command : **./flow.tcl -deisgn picorv32a**
 
     
 **<li>Directory order to invoke the tool OPENLANE </li>**
-
-**Desktop/work/tools/openlane_working_dir/openlane**
+```
+Desktop/work/tools/openlane_working_dir/openlane
+```
 
 In order to enter into BASH in terminal ,we must use a command 
 ```
@@ -165,7 +166,7 @@ Now enter the follwing commands to invoke the openlane in terminal i.e using bas
 ```
 -bash-4.2$ **pwd** <br>
 /OpenLANE_flow <br>
-**-ls -ltr** ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
+-ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
 <br>
 ```
 
@@ -175,7 +176,7 @@ Now enter the follwing commands to invoke the openlane in terminal i.e using bas
 
 next enter the command 
 ```
-**./flow.tcl -interactive**
+./flow.tcl -interactive
 ```
 Now OpenLane tool is opened & invoked as shown in below image. next is to input the required package by command **pacakage require openlane 0.9**
 <br>
@@ -189,7 +190,7 @@ We will be designing Picorv32a CPU.this is basically a design setup stage where 
 
 commands is as follows:
 ```
-**prep -design picorv32a**
+prep -design picorv32a
 ```
 
 <br>
@@ -200,9 +201,9 @@ commands is as follows:
 
 next commands :  
 ```
-**cd designs**<br>
-**cd picorv32a**<br>
-**ls -ltr**<br>
+cd designs <br>
+cd picorv32a <br>
+ls -ltr <br>
 ```
 
 **picorv32a** contains files like config.tcl,sky130 tcl files,src, and new directory **runs** as been created by design setup as shown in below image
@@ -226,7 +227,7 @@ next command - **cd date created** for ex: in my case its **cd 16-05_16-20** it 
 Next step is we need to perform the Synthesis process on the design. command used is
 
 ```
-**run_synthesis**
+run_synthesis
 ```
 
 
@@ -290,7 +291,7 @@ formula is given by:
 
 Once synthesis is sucessful,next step is floorplan. we use command 
 ```
-**run_floorplan**
+run_floorplan
 ```
 
 <br>
@@ -316,13 +317,14 @@ Next step is to view the **VMetal and HMetal** (vertical metal & horizontal meta
 
 now go to tmp folder from date created folder ,use this command
 ```
-**openlane/designs/picorv32a/runs/16-05_16-20/tmp/floorplan**
+openlane/designs/picorv32a/runs/16-05_16-20/tmp/floorplan
+
 ```
 <br>
 
 use command 
 ```
-**ls -ltr** <br>
+ls -ltr <br>
 ```
 
 def files are available as shown in below image.
@@ -336,9 +338,11 @@ def files are available as shown in below image.
 
 
 we are interested in def file called **4-ioPlacer.def** open this file using command 
+
 ```
-**less 4-ioPlacer.def**
+less 4-ioPlacer.def
 ```
+
 
 we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.therefore the width of chip is 660.685 micrometer and height is 671.405 micrometer.
 
@@ -351,7 +355,21 @@ we can see the die area, unit distance in micron.,unit distance in micron (1000)
 
 To see the actual layout after the floorplan ,go the folders as shown below:
 ```
-**openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan**
+openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan
+
+    Screenshot from 2024-05-16 22-35-15
+    we will get the layout as shown in below image
+
+    Screenshot from 2024-05-16 22-36-41
+    To zoom in press left button of mouse then right button and press z
+    Screenshot from 2024-05-16 22-38-02
+
+    In order to know the details of any cell in the layout , just move the cursor to that cell and press S to select the cell and then in the window of tkcon enter the command "what". then it will displey the details of the selected cell. lets see the detail of horizontal and vertical pins , in tkcon window it shows that the pin is in the metal 3 for horizontal pins ,similarly for the vertical pins, we see that thepin is at metal 2. image is shown below.
+    Screenshot from 2024-05-16 22-40-09 Screenshot from 2024-05-16 22-40-20
+
+    Screenshot from 2024-05-16 22-42-19 Screenshot from 2024-05-16 22-42-35
+
+
 ```
 
 now we need to open the **magic** file by the  following command
