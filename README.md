@@ -10,6 +10,7 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
 ## Table of contents :
     - DAY-1 : - INTRODUCTION 
               - OPENLANE AND STRIVE CHIPSETS
+              - COMMANDS USED IN OpenLANE FLOW
               - TOOL INVOCATION & OPERATION 
               - GETTING STARTED - SYNTHESIZING THE DESIGN
 
@@ -110,8 +111,6 @@ OpenLane began as an open-source project aiming to facilitate a genuine open-sou
 
 The Main aim of Openlane is to **produce clean GDSII without human intervention.**
 
-![WhatsApp Image 2024-05-17 at 8 33 23 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c4e5b99c-0109-45db-b56f-25274c4d4804)
-
 <br>
 
 **<li>OpenLANE ASIC design flow</li>**
@@ -122,7 +121,21 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 
 </ul>
 
-## DAY - 2 : 
+
+### COMMANDS USED IN OpenLANE FLOW:
+
+1. run_synthesis
+2. run_floorplan
+3. run_placement
+4. run_cts
+5. run_routing
+6. run_magic
+7. run_magic
+8. run_magic_spice_export
+9. run_magic_drc
+10. run_netgen
+11. run_magic_antenna_check
+
 
 ### TOOL INVOCATION & OPERATION:
 
@@ -136,7 +149,9 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 
   <br>
 
-<ul>
+<ul
+
+
     
 **<li>Directory order to invoke the tool OPENLANE </li>**
 
