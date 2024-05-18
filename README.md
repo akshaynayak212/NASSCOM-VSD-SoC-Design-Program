@@ -286,8 +286,10 @@ Next step is to view the **VMetal and HMetal** (vertical metal & horizontal meta
 now go to tmp folder from date created folder ,use this command
 
 **openlane/designs/picorv32a/runs/16-05_16-20/tmp/floorplan**
+<br>
 
-use command **ls -ltr** def files are available as shown in below image.
+use command **ls -ltr** <br>
+def files are available as shown in below image.
 <br>
 
 ![Screenshot from 2024-05-16 22-22-49](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/114478f0-b073-4a30-8c2a-8480149e8ccb)
@@ -295,7 +297,7 @@ use command **ls -ltr** def files are available as shown in below image.
 
 
 
-if we open this file, we can see all information about die area ,database units. def file is **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405). it means 1 micron means 1000 databased units. so 660685 and 671405 are databased units. and if we devide this by 1000 then we can get the dimensions of chips in micrometer.
+if we open this file, we can see all information about die area ,database units. def file is **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron.,unit distance in micron (1000), Die area  is (0 0) (660685 671405).660685 and 671405 are databased units. and if we divide this by 1000 (unit distance)  then we can get the dimensions of chips in micrometer.
 
 <br>
 
