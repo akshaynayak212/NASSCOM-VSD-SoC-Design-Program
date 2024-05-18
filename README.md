@@ -14,8 +14,9 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
               - TOOL INVOCATION & OPERATION 
               - GETTING STARTED - SYNTHESIZING THE DESIGN
 
-    - DAY-2 : 
-  
+    - DAY-2 : - CHIP FLOOR PLANNING CONSIDERATION 
+              - STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
+              - CONGESTION AWARE PLACEMENT USING REPLACE 
                   
 
 
@@ -63,14 +64,6 @@ In the DAY 1 lecture series
 <br>
 ![WhatsApp Image 2024-05-17 at 5 27 31 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/1bd13b83-370d-4cd0-bb20-1fee9153c474)
 <br>
-
-To design a Open Source Digital ASIC, Components are :
-
-**(1) RTL Designs**
-
-**(2) EDA Tools**
-
-**(3) PDK Data**
 
 Process Design Kit is PDK data which contains information about the manufacturing process. In 2020, Google collaborated with **SkyWater Technology** to release an **open-source FOSS 130nm** Production PDK.
 
@@ -120,21 +113,25 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 ![WhatsApp Image 2024-05-17 at 8 31 48 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f94a13ab-6cbe-4735-b360-619977aa5fd0)
 
 </ul>
-
+<br>
 
 ### COMMANDS USED IN OpenLANE FLOW:
 
-1. run_synthesis
-2. run_floorplan
-3. run_placement
-4. run_cts
-5. run_routing
-6. run_magic
+
+1. prep -design <design> -tag <tag> -config <config> -init_design_config -overwrite
+2. run_synthesis
+3. run_floorplan
+4. run_placement
+5. run_cts
+6. run_routing
 7. run_magic
-8. run_magic_spice_export
-9. run_magic_drc
-10. run_netgen
-11. run_magic_antenna_check
+8. run_magic
+9. run_magic_spice_export
+10. run_magic_drc
+11. run_netgen
+12. run_magic_antenna_check
+
+for fully automated run we can use command : **./flow.tcl -deisgn picorv32a**
 
 
 ### TOOL INVOCATION & OPERATION:
@@ -246,7 +243,61 @@ Before running, the result folder was empty. Now, after running synthesis, we ca
 ![Screenshot from 2024-05-17 23-59-16](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/94329035-180c-4444-9273-d16e5a606c6e)
 
 <br>
+</ul>
 
+### CHIP FLOOR PLANNING CONSIDERATION 
+
+<ul>
+    
+**<li> UTILIZATION FACTOR AND ASPECT RATIO </li>**
+
+In order to calculate the Utilization Factor and Aspect Ratio, we must know the height and width of core and die areas.
+formula is given by:
+
+**Utilization Factor = area occupied by the netlist / Total area occupied by the core**
+
+--> If the utilization factor is 1 then it denotes 100 % utilization.
+--> We never go for 100 % utilization, we go for 50 % or 60 % factor.
+
+**Aspect Ratio = height of the core / width of the core**
+
+--> When aspect ratio is 1 , then its a square chip.
+
+
+
+### STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
+
+Once synthesis is sucessful,next step is floorplan. we use command **run_floorplan**
+<br>
+
+<br>
+
+This will create a folder inside **runs** folder of **picorv32a** directory.
+it will take a while to execute.once done we will get **PDN GENERATION IS SUCESSFUL** as shown in below image.
+<br>
+
+<br>
+
+Next step is to view the **VMetal and HMetal** (vertical metal & horizontal metal) , this will be available in **config.tcl** of the newly created folder of floorplan in date's folder in runs directoy
+<br>
+
+<br>
+
+now go to tmp folder from date created folder ,use this command
+
+**openlane/designs/picorv32a/runs/16-05_16-20/tmp/floorplan**
+
+use command **ls -ltr** def files are available as shown in below image.
+<br>
+
+<br>
+
+
+
+if we open this file, we can see all information about die area ,database units. def file is **4-ioPlacer.def** open this file using command **less 4-ioPlacer.def** we can see the die area, unit distance in micron. Die area  is (0 0) (660685 671405), unit distance in micron (1000). it means 1 micron means 1000 databased units. so 660685 and 671405 are databased units. and if we devide this by 1000 then we can get the dimensions of chips in micrometer.
+<br>
+
+<br>
 
 
 
