@@ -468,7 +468,7 @@ below given is the path from where **sky130A.tech** is to be copied to **vsdstdc
 home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech
 ```
 
-<li>Opening of layout of cmos inverter using magic tool</li>
+**<li>Opening of layout of cmos inverter using magic tool</li>**
 
 to open the layout of inverter working directory command is given  below
 
@@ -483,15 +483,20 @@ magic -T sky130A.tech sky130_inv.mag
 ```
 <br>
 
+![Screenshot from 2024-05-20 12-31-05](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/ec901e2b-ac7d-4af1-8d1f-750e929a1acc)
+
 <br>
 
 To check that whether CMOS inverter is working or not. we can check pmos,nmos,poly ,diffusion layer etc and other layers are arranged & connected properly or not by clicking on that area and press s and type **what** in tkon window ( another window other than layout window)
 
 <br>
 
+![Screenshot from 2024-05-20 12-13-49](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/1496e44c-f0d5-4d39-b3ac-3fd80d9b3bca)
+
+![Screenshot from 2024-05-20 12-15-25](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/0fc285f6-9a86-4cb7-85fc-353d2c88761e)
 <br>
 
-<li> Extraction of spice netlist </li>
+**<li> Extraction of spice netlist </li>**
 
 we need to write following commands in tkon window
 ```
@@ -499,14 +504,43 @@ extract all
 ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
-now the spice model is generated , can be checked by using command ls -ltr in vsdstdcelldesign folder sky130_inv.spice as hown in below image
+<br>
 
+![Screenshot from 2024-05-20 12-30-42](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/b3577685-081b-4103-8cca-de3e0e9726e6)
+<br>
+
+now the spice model is generated , can be checked by using command ``` ls -ltr ``` in vsdstdcelldesign folder **sky130_inv.spice** is generated as shown in below image
+
+<br>
+
+![Screenshot from 2024-05-17 14-50-00](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/ceeffe2a-7ef2-424d-85cb-3eaa9f136cb9)
+
+<br>
+
+Once the extracting the SPICE file is done , next step is to update it according to the design of inverter.
+use the below command
+```
+gedit sky130_inv.spice
+```
+
+we will get this window
 <br>
 
 <br>
 
-    
+change  the following in SPICE file 
+
+--> include pshort nshort library files
+--> define VDD and VSS sources
+--> create a pulse signal to generate transient analysis
+as shoen in below image:
+<br>
+
+<br>
+
 </ul>
+
+
 
 
 
