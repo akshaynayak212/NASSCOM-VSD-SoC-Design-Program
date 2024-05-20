@@ -549,12 +549,16 @@ ngspice sky130_inv.spice
 ```
 <br>
 
+![Screenshot from 2024-05-21 00-08-36](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/1f07c48c-c7be-4295-bcdb-5c635c6d075d)
+
 <br>
-we will get ngspice terminal to plot graph type
+we will get ngspice terminal to plot graph type command 
 ```
 plot Y vs time a
 ```
 <br>
+
+![Screenshot from 2024-05-21 01-49-51](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/18dd66b7-6cbb-48ab-8b9e-015bc9a86ed0)
 
 <br>
 
