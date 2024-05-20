@@ -17,7 +17,7 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
     - DAY-2 : - CHIP FLOOR PLANNING CONSIDERATION 
               - STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
               - STEPS TO RUN PLACEMENT
-                  
+    - DAY-3 : - DESIGN LIBRARY CELL DESIGN USING MAGIC AND NGSPICE CHARACTERIZATION
 
 
 
@@ -324,7 +324,7 @@ openlane/designs/picorv32a/runs/16-05_16-20/tmp/floorplan
 
 use command 
 ```
-ls -ltr <br>
+ls -ltr 
 ```
 
 def files are available as shown in below image.
@@ -441,7 +441,70 @@ Zooom in (to zoom press z), we can see that the standard cells are all placed li
 <br>
 
 
+### DESIGN LIBRARY CELL DESIGN USING MAGIC AND NGSPICE CHARACTERIZATION
 
+<ul>
+
+**<li>Steps to create std cell layout and extraction of spice netlist</li>**
+<br>
+First step is to gitclone the given files from github to **openlane** folder by below command:
+```
+ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+```
+<br>
+
+<br>
+A new folder will be created in openlane directory as **vsdstdcelldesign** as shown in below image
+<br>
+
+<br>
+
+Next step to copy the **sky130A.tech** file of magic from pdks folder to **vsdstdcelldesign** folder 
+
+below given is the path from where **sky130A.tech** is to be copied to **vsdstdcelldesign** folder
+```
+home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech
+```
+
+<li>Opening of layout of cmos inverter using magic tool</li>
+
+to open the layout of inverter working directory command is given  below
+
+```
+home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+```
+<br>
+
+next is to open the inverter design in the magic by below given command\
+```
+magic -T sky130A.tech sky130_inv.mag
+```
+<br>
+
+<br>
+
+To check that whether CMOS inverter is working or not. we can check pmos,nmos,poly ,diffusion layer etc and other layers are arranged & connected properly or not by clicking on that area and press s and type **what** in tkon window ( another window other than layout window)
+
+<br>
+
+<br>
+
+<li> Extraction of spice netlist </li>
+
+we need to write following commands in tkon window
+```
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+now the spice model is generated , can be checked by using command ls -ltr in vsdstdcelldesign folder sky130_inv.spice as hown in below image
+
+<br>
+
+<br>
+
+    
+</ul>
 
 
 
