@@ -532,11 +532,62 @@ change  the following in SPICE file
 
 --> include pshort nshort library files
 --> define VDD and VSS sources
---> create a pulse signal to generate transient analysis
-as shoen in below image:
+--> create a pulse signal to create transient analysis.
+as shown in below image:
 <br>
 
 <br>
+
+**<li> Transient analysis & steps to characterize the Inverter </li>**
+once we update the spice model , save and we need to run spice model using ngspice tool by command
+```
+ngspice sky130_inv.spice
+```
+we will get ngspice terminal to plot graph type
+```
+plot Y vs time a
+```
+<br>
+
+Transient analysis of cmos inverter image is given below
+<br>
+
+<br>
+
+next step is to calculate the rise time , fall time , cell rise delay and cell fall delay:
+click on the waveforms to get values i.e 
+
+--> 20 % of VDD (3.3 V) is 0.66V
+--> 80 % of VDD (3.3 V) is 2.64V
+--> 50 % of VDD (3.3 V) is 1.65V
+<br>
+1) **Rise time**- Time taken to the output waveform to 20% value to 80% value.
+
+<br>
+
+<br>
+therfore rise time= (2.24 - 2.18)e-09 = 0.64e-09s
+  
+2) **Fall time**- Time taken to the output waveform to 80% value to 20% value.
+<br>
+
+<br>
+therfore fall time = (2.17999 - 2.12)e-09 = 0.5999e-09s
+
+
+5) **cell rise delay**-Time difference between the 50% value of input and 50% value of the output.
+
+<br>
+
+<br>
+therfore cell rise delay or propogation delay = (2.2107 - 2.1501)e-09 = 0.061e-09s
+
+7) **cell fall delay**-Time difference between output falling to 50% and input is rising to 50% value.
+
+<br>
+
+<br>
+thefore cell fall delay = (4.077 -4.05)e-09 = 0.027e-09 s
 
 </ul>
 
