@@ -578,11 +578,14 @@ click on the waveforms to get values i.e
 
 <br>
 
+![WhatsApp Image 2024-05-21 at 1 56 46 AM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f03945b9-f78b-46b8-bc39-af73de135a37)
 <br>
 therfore rise time= (2.24 - 2.18)e-09 = 0.64e-09s
   
 2) **Fall time**- Time taken to the output waveform to 80% value to 20% value.
 <br>
+
+![WhatsApp Image 2024-05-21 at 1 56 45 AM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/04d2adf7-f47f-4d9f-830e-1f5f3ad379d0)
 
 <br>
 therfore fall time = (2.17999 - 2.12)e-09 = 0.5999e-09s
@@ -592,6 +595,8 @@ therfore fall time = (2.17999 - 2.12)e-09 = 0.5999e-09s
 
 <br>
 
+![Screenshot from 2024-05-21 00-18-15](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/6af7e41e-14a4-4780-b427-6beaeceb92b2)
+
 <br>
 therfore cell rise delay or propogation delay = (2.2107 - 2.1501)e-09 = 0.061e-09s
 
@@ -599,10 +604,17 @@ therfore cell rise delay or propogation delay = (2.2107 - 2.1501)e-09 = 0.061e-0
 
 <br>
 
+![WhatsApp Image 2024-05-21 at 1 56 45 AM(1)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/e6be18ed-736a-4df4-ae12-a09afac58937)
 <br>
 thefore cell fall delay = (4.077 -4.05)e-09 = 0.027e-09 s
 
 </ul>
+
+
+
+
+
+
 
 
 
