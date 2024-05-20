@@ -453,10 +453,12 @@ First step is to gitclone the given files from github to **openlane** folder by 
 ```
 <br>
 
+![Screenshot from 2024-05-20 21-09-42](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/27d46612-ff60-4f4b-a682-668c74f9aea2)
 <br>
 A new folder will be created in openlane directory as **vsdstdcelldesign** as shown in below image
 <br>
 
+![Screenshot from 2024-05-20 21-10-48](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/ccb8d4f9-fa07-4533-9f46-3f655f40680a)
 <br>
 
 Next step to copy the **sky130A.tech** file of magic from pdks folder to **vsdstdcelldesign** folder 
@@ -505,6 +507,9 @@ now the spice model is generated , can be checked by using command ls -ltr in vs
 
     
 </ul>
+
+
+
 
 
 
