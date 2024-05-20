@@ -526,7 +526,8 @@ gedit sky130_inv.spice
 we will get this window
 <br>
 
-<br>
+![Screenshot from 2024-05-20 12-31-32](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/85e4cf31-47b5-4d92-a810-093516edf94c)
+
 
 change  the following in SPICE file 
 
@@ -536,6 +537,9 @@ change  the following in SPICE file
 as shown in below image:
 <br>
 
+![Screenshot from 2024-05-21 00-16-58](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/de34ba01-057c-4e3c-ab28-fa2227735b85)
+
+<br>
 <br>
 
 **<li> Transient analysis & steps to characterize the Inverter </li>**
@@ -543,10 +547,15 @@ once we update the spice model , save and we need to run spice model using ngspi
 ```
 ngspice sky130_inv.spice
 ```
+<br>
+
+<br>
 we will get ngspice terminal to plot graph type
 ```
 plot Y vs time a
 ```
+<br>
+
 <br>
 
 Transient analysis of cmos inverter image is given below
