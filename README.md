@@ -25,6 +25,14 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
                  - Transient analysis & steps to characterize the Inverter
               - INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
 
+    - DAY-4 : - PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS 
+              - Steps to convert magic layout to std cell LEF
+              - Steps to configure synthesis settings to fix slack
+              - TIMING ANALYSIS USING openSTA
+              -INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
+
+              
+
 
 
 
@@ -793,13 +801,17 @@ run_synthesis
 ```
 <br>
 
+![Screenshot from 2024-05-21 11-55-42](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/2b4f0835-4ba4-40c9-b60b-43090f063153)
+
 <br>
 
-**<li> Steps to configure synthesis settings to fix slack and include vsdinv </li>**
+**<li> Steps to configure synthesis settings to fix slack </li>**
 
 Once the synthesis is sucessfull, check the slack
 
 <br>
+
+![Screenshot from 2024-05-21 12-05-17](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/771dbeaa-89dd-422e-8944-32fd009f8559)
 
 <br>
 
@@ -952,6 +964,7 @@ run_cts
 
 <br>
 
+![Screenshot from 2024-05-21 16-43-53](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/26af6cad-31f8-486f-8bbe-644c73abfd93)
 
 <br>
 
@@ -978,6 +991,8 @@ exit
 ```
 
 <br>
+
+![Screenshot from 2024-05-21 18-44-37](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/ee76fc61-0a82-4e4c-99fc-e278f96df4f1)
 
 <br>
 
@@ -1023,6 +1038,7 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 ```
 <br>
 
+![Screenshot from 2024-05-21 19-40-43](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/acf1f028-2349-485e-8c25-5d7df41f787d)
 
 <br>
 
