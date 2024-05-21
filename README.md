@@ -17,6 +17,7 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
     - DAY-2 : - CHIP FLOOR PLANNING CONSIDERATION 
               - STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
               - STEPS TO RUN PLACEMENT
+              
     - DAY-3 : - DESIGN LIBRARY CELL DESIGN USING MAGIC AND NGSPICE CHARACTERIZATION 
                  - Steps to create std cell layout and extraction of spice netlist
                  - Opening of layout of cmos inverter using magic tool
