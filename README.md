@@ -660,7 +660,7 @@ Open met met3.mag file from file -> Open in magic window
 ![Screenshot from 2024-05-21 09-29-44](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d684b929-e8b3-416d-919f-973400895a18)
 <br>
 
-There are some changes to be made in sky130A.tech file. changes given below:
+There are some changes to be made in **sky130A.tech file**. Search for the **poly.9** in the **sky130A.tech** file. It appears in both the **POLY** and **uhrpoly** sections,changes given below:
 
 open sky130A.tech file as shown below
 
@@ -699,24 +699,71 @@ DRC is checked as shown in below image:
 
 ### PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS 
 
+<ul>
 The next step is to get the **.lef** file from the inverter design.
 
 Open the tracks.info file 
+directory is : 
+```
+openlane_working_dir/pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info 
+```
 <br>
 
 <br>
 
-Change grid into tracks in console window
+Change grid into tracks in console window as shown in below image:
 
 <br>
 
 <br>
 
 
+<br>
+
+<br>
+
+**<li>Steps to convert magic layout to std cell LEF</li>**
+
+for the extraction of lef file ,enter the given below command in the tckon window.
+
+```
+lef write
+```
+
+<br>
+
+
+<br>
+
+
+now the **sky130_inv.lef** file is created in **vsdstdcelldesign** folder in **openlane** directory.
+
+<br>
+
+<br>
+
+<br>
+
+The next step is to copy the newly created **.lef** file to src folder of **picorv32a** directory along with some important libraries.
+
+libraries are present in following directory 
+```
+/openlane/vsdstdcelldesign/libs
+```
+<br>
+
+<br>
+
+<br>
 
 
 
 
+
+
+
+
+</ul>
 
 
 
