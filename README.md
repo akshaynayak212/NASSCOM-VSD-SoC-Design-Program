@@ -637,10 +637,6 @@ to open magic use
 ```
 <br>
 
-/home/vsduser/Pictures/Screenshot from 2024-05-21 02-21-56.png
-
-/home/vsduser/Pictures/Screenshot from 2024-05-21 02-22-56.png
-
 
 Open met met3.mag file from file -> Open in magic window
 
@@ -651,10 +647,10 @@ There are some changes to be made in sky130A.tech file. changes given below:
 
 <br>
 
-/home/vsduser/Pictures/Screenshot from 2024-05-21 02-24-22.png
+
 <br>
 
-/home/vsduser/Pictures/Screenshot from 2024-05-21 02-29-44.png
+
 <br>
 
 
