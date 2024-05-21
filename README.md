@@ -17,7 +17,12 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
     - DAY-2 : - CHIP FLOOR PLANNING CONSIDERATION 
               - STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
               - STEPS TO RUN PLACEMENT
-    - DAY-3 : - DESIGN LIBRARY CELL DESIGN USING MAGIC AND NGSPICE CHARACTERIZATION
+    - DAY-3 : - DESIGN LIBRARY CELL DESIGN USING MAGIC AND NGSPICE CHARACTERIZATION 
+                 - Steps to create std cell layout and extraction of spice netlist
+                 - Opening of layout of cmos inverter using magic tool
+                 - Extraction of spice netlist
+                 - Transient analysis & steps to characterize the Inverter
+              - INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
 
 
 
@@ -618,7 +623,7 @@ thefore cell fall delay = (4.077 -4.05)e-09 = 0.027e-09 s
 
 </ul>
 
-
+### INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
 
 
 
