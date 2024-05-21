@@ -977,12 +977,10 @@ exit
 
 ```
 
-
 <br>
 
 <br>
 
-<br>
 
 
 
@@ -1028,7 +1026,6 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 
 <br>
 
-<br>
 
 
 ## DAY 5 
