@@ -828,13 +828,18 @@ run_placement
 ```
 <br>
 
+![Screenshot from 2024-05-21 12-10-59](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/323368c0-5e9f-4b8d-9802-3bf245301e01)
+
 <br>
 
 The standard cell inverter can be seen in the below image using magic tool
 
 <br>
 
+![Screenshot from 2024-05-21 12-16-14](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f592c682-b208-4104-96a9-adce35b0e967)
 <br>
+
+![Screenshot from 2024-05-21 12-23-34](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/5e6d6b16-3647-4c15-b0e5-68aff7c7559b)
 
 <br>
 
@@ -844,8 +849,11 @@ expand
 ```
 <br>
 
+![Screenshot from 2024-05-21 12-24-58](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/60efee39-fa9d-4fea-bde4-a8be477a17d7)
+
 <br>
 
+![Screenshot from 2024-05-21 12-25-15](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/aa755300-e513-4a7a-b589-ee54ab8a99a5)
 <br>
 
 </ul>
