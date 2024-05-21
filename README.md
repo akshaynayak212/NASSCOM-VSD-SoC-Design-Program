@@ -709,18 +709,25 @@ openlane_working_dir/pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info
 ```
 <br>
 
+![Screenshot from 2024-05-21 10-09-12](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/5c1350db-8bcb-4f85-9621-c07dc6d678ec)
 <br>
 
 Change grid into tracks in console window as shown in below image:
 
 <br>
 
-<br>
-
-
-<br>
+![Screenshot from 2024-05-21 10-12-26](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/6d6c8e36-9c3d-4034-8170-a9153f6d6025)
 
 <br>
+
+![Screenshot from 2024-05-21 10-12-43](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/7676e0e6-c2e6-40c6-8bd0-6311e6befaff)
+
+<br>
+
+![Screenshot from 2024-05-21 10-14-12](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d3002f17-2091-420d-8bf6-519caaddddd2)
+
+<br>
+
 
 **<li>Steps to convert magic layout to std cell LEF</li>**
 
@@ -732,6 +739,7 @@ lef write
 
 <br>
 
+![Screenshot from 2024-05-21 10-14-54](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c80b4f0b-77db-496e-8b9e-fe9c84b13071)
 
 <br>
 
@@ -739,6 +747,9 @@ lef write
 now the **sky130_inv.lef** file is created in **vsdstdcelldesign** folder in **openlane** directory.
 
 <br>
+
+![Screenshot from 2024-05-21 10-15-09](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/b07b788d-2c87-4571-8e0b-7f2cc060bce4)
+/bc2b3226-fc0a-4fda-a110-036a3f515eda)
 
 <br>
 
@@ -766,6 +777,12 @@ libraries are present in following directory
 </ul>
 
 
+
+
+
+
+
+![Screenshot from 2024-05-21 10-22-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/42f31410-0edb-487b-b67f-fa0acad3a870)
 
 
 
