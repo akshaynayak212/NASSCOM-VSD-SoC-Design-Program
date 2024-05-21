@@ -764,20 +764,298 @@ libraries are present in following directory
 ```
 <br>
 
+![Screenshot from 2024-05-21 10-21-26](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/fb25c48c-d200-40ef-b6e3-6f9d9897b3f3)
+
+<br>
+
 ![Screenshot from 2024-05-21 10-22-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/42f31410-0edb-487b-b67f-fa0acad3a870)
 <br>
 
+Now the next step is to edit the **config.tcl** of picorv32a design.
+
+config.tcl file is present in **picorv32a** folder
+
+<br>
+
+<br>
+
+NOW go to the openlane directory run **docker** command to go to bash terminal
+
+next commands are given below:
+
+```
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      
+add_lefs -src $lefs
+run_synthesis
+```
+<br>
+
+<br>
+
+**<li> Steps to configure synthesis settings to fix slack and include vsdinv </li>**
+
+Once the synthesis is sucessfull, check the slack
+
+<br>
+
+<br>
+
+we get wns= -23.89  and tns== -711.5.
+
+next command is to run floorplan
+
+```
+run_floorplan
+
+```
+if error occurs in floorplan stage use below commands one by one :
+```
+init_floorplan
+
+place_io
+
+tap_decap_or
+
+```
+
+next command is to run placement
+```
+run_placement
+
+```
+
+The standard cell inverter can be seen in the below image using magic tool
+<br>
+
+<br>
+
+use the below command in tckon window to check whether inverter placed properly or not
+```
+expand
+```
+<br>
+
+<br>
+
+</ul>
+
+### TIMING ANALYSIS USING openSTA
+
+steps :
+
+start with below commands :
+
+```
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+set ::env(SYNTH_SIZING) 1
+run_synthesis
+
+
+```
+
+once synthesis is done create a **pre_sta.conf** file for in **openlane** directory
+write the code as given in below image in **pre_sta.conf** file .
+
+<br>
+
+<br>
+
+next create a **my_base.sdc** file in openlane/designs/picorv32a/src directory. 
+write the code as given in below image in **my_base.sdc** file.
+
+<br>
+
+<br>
+
+Now run sta in this openlane_working_dir/openlane  folder using the command :
+```
+sta pre_sta.conf
+```
+
+<br>
+
+<br>
+
+To check the connections to a net ,use the below command
+```
+report net -connenctions _10566_
+```
+
+Replace the cell with higher drive strength using this command
+```
+
+replace_cell _13165_ sky130_fd_sc_hd__or3_4
+```
+
+to check timing
+```
+
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+
+### Clock tree synthesis TritonCTS and signal integrity
+
+Steps to run CTS using TritonCTS :
+
+Run the Synthesis , Floorplan and placement again
+
+```
+prep -design picorv32a -tag 05-05_10-43 -overwrite
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+set ::env(SYNTH_SIZING) 1
+run_synthesis
+
+init_floorplan
+place_io
+tap_decap_or
+
+run_placement
+
+```
+To Run clocktree synthesis use below command :
+
+```
+run_cts
+```
+
+<br>
+
+
+<br>
+
+### Post-CTS OpenROAD timing analysis
+
+use the below commands : (one by one)
+
+```
+openroad
+
+read_lef /openLANE_flow/designs/picorv32a/runs/05-05_10-43/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/cts/picorv32a.cts.def
+write_db pico_cts.db
+read_db pico_cts.db
+read_verilog /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/synthesis/picorv32a.synthesis_cts.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+set_propagated_clock [all_clocks]
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+exit
+
+```
+
+
+<br>
+
+<br>
+
 <br>
 
 
 
+next commands :
+
+```
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+```
 
 
+```
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/placement/picorv32a.placement.def
+run_cts
+
+```
 
 
+<li> Enter the openROAD flow and check timing by using the following commands </li>
 
-</ul>
+```
+openroad
+read_lef /openLANE_flow/designs/picorv32a/runs/05-05_10-43/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/cts/picorv32a.cts.def
+write_db pico_cts1.db
+read_db pico_cts1.db
+read_verilog /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/synthesis/picorv32a.synthesis_cts.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+set_propagated_clock [all_clocks]
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
 
+exit
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+
+```
+<br>
+
+
+<br>
+
+<br>
+
+
+## DAY 5 
+
+###  Final step for RTL2GDS using tritinRoute and openSTA
+
+first step is to build  the power distribution network by follwing command :
+```
+gen_pdn
+
+```
+
+<br>
+
+To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
+
+```
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
+```
+
+<br>
+
+<br>
+
+<br>
+
+Final steis routing . to run routing use below command :
+
+```
+run_routing
+```
+
+To view the final design  with routing in Magic tool , go to the results/routing/ in  the runs folder of openlane directory by using below command :
+
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
+
+```
+
+<br>
+
+<br>
+
+<br>
+
+## Acknowledgement
+
+
+I want to give a big thank you to Mr. Kunal Ghosh, one of the founders of VLSI System Design (VSD) Corp. Pvt. Ltd., and Mr. Nickson Jose for their amazing help during the DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING workshop. They really know their stuff when it comes to chip design using OpenLANE software and other cool techniques. Their guidance has been super valuable in teaching me all about it.
 
 
 
