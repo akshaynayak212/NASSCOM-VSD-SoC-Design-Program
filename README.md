@@ -724,9 +724,6 @@ Change grid into tracks in console window as shown in below image:
 
 <br>
 
-![Screenshot from 2024-05-21 10-14-12](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d3002f17-2091-420d-8bf6-519caaddddd2)
-
-<br>
 
 
 **<li>Steps to convert magic layout to std cell LEF</li>**
@@ -739,7 +736,8 @@ lef write
 
 <br>
 
-![Screenshot from 2024-05-21 10-14-54](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c80b4f0b-77db-496e-8b9e-fe9c84b13071)
+![Screenshot from 2024-05-21 10-14-12](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d3002f17-2091-420d-8bf6-519caaddddd2)
+
 
 <br>
 
@@ -748,11 +746,14 @@ now the **sky130_inv.lef** file is created in **vsdstdcelldesign** folder in **o
 
 <br>
 
-![Screenshot from 2024-05-21 10-15-09](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/b07b788d-2c87-4571-8e0b-7f2cc060bce4)
-/bc2b3226-fc0a-4fda-a110-036a3f515eda)
+![Screenshot from 2024-05-21 10-14-54](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c80b4f0b-77db-496e-8b9e-fe9c84b13071)
+
+
 
 <br>
 
+![Screenshot from 2024-05-21 10-15-09](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/b07b788d-2c87-4571-8e0b-7f2cc060bce4)
+/bc2b3226-fc0a-4fda-a110-036a3f515eda)
 <br>
 
 The next step is to copy the newly created **.lef** file to src folder of **picorv32a** directory along with some important libraries.
@@ -763,6 +764,7 @@ libraries are present in following directory
 ```
 <br>
 
+![Screenshot from 2024-05-21 10-22-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/42f31410-0edb-487b-b67f-fa0acad3a870)
 <br>
 
 <br>
@@ -782,7 +784,7 @@ libraries are present in following directory
 
 
 
-![Screenshot from 2024-05-21 10-22-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/42f31410-0edb-487b-b67f-fa0acad3a870)
+
 
 
 
