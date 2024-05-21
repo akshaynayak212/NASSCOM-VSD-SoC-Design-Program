@@ -29,7 +29,14 @@ Hello everyone! I'll be sharing what I've learned from a 5-day workshop on VLSI-
               - Steps to convert magic layout to std cell LEF
               - Steps to configure synthesis settings to fix slack
               - TIMING ANALYSIS USING openSTA
-              -INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
+              - INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
+              - Post-CTS OpenROAD timing analysis
+
+
+    - DAY -5 : - Final step for RTL2GDS using tritinRoute and openSTA
+               -
+
+    - Acknowledgement
 
               
 
