@@ -625,6 +625,42 @@ thefore cell fall delay = (4.077 -4.05)e-09 = 0.027e-09 s
 </ul>
 
 ### INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
+<ul>
+First step is to download the lab files required for DRC error fixing by below coammand
+    
+```
+   wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+```
+to open magic use 
+```
+  magic -d XR
+```
+<br>
+
+/home/vsduser/Pictures/Screenshot from 2024-05-21 02-21-56.png
+
+/home/vsduser/Pictures/Screenshot from 2024-05-21 02-22-56.png
+
+
+Open met met3.mag file from file -> Open in magic window
+
+<br>
+
+<br>
+There are some changes to be made in sky130A.tech file. changes given below:
+
+<br>
+
+/home/vsduser/Pictures/Screenshot from 2024-05-21 02-24-22.png
+<br>
+
+/home/vsduser/Pictures/Screenshot from 2024-05-21 02-29-44.png
+<br>
+
+
+    
+</ul>
+
 
 
 
