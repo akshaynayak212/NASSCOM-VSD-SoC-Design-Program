@@ -1020,6 +1020,8 @@ gen_pdn
 
 <br>
 
+![Screenshot from 2024-05-21 19-40-57](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/70e45772-1fd8-4c80-9b69-01ba47f701eb)
+
 <br>
 
 To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
@@ -1031,8 +1033,11 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 <br>
 
+![Screenshot from 2024-05-21 19-42-20](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/1f5f42ea-7eb2-4c9e-a1e9-fb3f8376b6f7)
+
 <br>
 
+![Screenshot from 2024-05-21 19-42-31](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/3d84ce66-7a3a-4bb9-9df4-336938086d8f)
 <br>
 
 Final steis routing . to run routing use below command :
@@ -1050,14 +1055,25 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 <br>
 
+![Screenshot from 2024-05-21 20-29-57](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f8a94db9-98e1-4d1a-982e-e497a8bd0e94)
+
 <br>
 
+![Screenshot from 2024-05-21 20-30-04](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/3c23184b-cb1b-4349-b6f8-27625e0536de)
+
+<br>
+
+![Screenshot from 2024-05-21 20-30-51](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/e7cf860e-25d8-418a-8821-d0482e645dbc)
 <br>
 
 ## Acknowledgement
 
 
 I want to give a big thank you to Mr. Kunal Ghosh, one of the founders of VLSI System Design (VSD) Corp. Pvt. Ltd., and Mr. Nickson Jose for their amazing help during the DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING workshop. They really know their stuff when it comes to chip design using OpenLANE software and other cool techniques. Their guidance has been super valuable in teaching me all about it.
+
+
+
+
 
 
 
