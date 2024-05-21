@@ -826,8 +826,14 @@ next command is to run placement
 run_placement
 
 ```
+<br>
+
+<br>
 
 The standard cell inverter can be seen in the below image using magic tool
+
+<br>
+
 <br>
 
 <br>
@@ -836,6 +842,8 @@ use the below command in tckon window to check whether inverter placed properly 
 ```
 expand
 ```
+<br>
+
 <br>
 
 <br>
@@ -1072,6 +1080,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ![Screenshot from 2024-05-21 20-30-51](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/e7cf860e-25d8-418a-8821-d0482e645dbc)
 <br>
+
 
 ## Acknowledgement
 
