@@ -637,11 +637,18 @@ to open magic use
 ```
 <br>
 
+![Screenshot from 2024-05-21 02-21-56](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/30b370d7-7fe0-40ab-9d37-04e73d31f43a)
+![Screenshot from 2024-05-21 02-22-56](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/c104bcc0-c5ac-4b3f-bbef-8dddae97f582)
+![Screenshot from 2024-05-21 02-24-22](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/2134a46d-e12b-4e87-b87e-aa50e44aed91)
+
+<br>
+
 
 Open met met3.mag file from file -> Open in magic window
 
 <br>
 
+![Screenshot from 2024-05-21 02-28-23](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/981cce52-bfa1-4a4b-b97e-dcb17c62bd17)
 <br>
 There are some changes to be made in sky130A.tech file. changes given below:
 
@@ -656,6 +663,7 @@ There are some changes to be made in sky130A.tech file. changes given below:
 
     
 </ul>
+
 
 
 
