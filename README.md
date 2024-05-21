@@ -865,6 +865,10 @@ write the code as given in below image in **pre_sta.conf** file .
 
 <br>
 
+![Screenshot from 2024-05-21 13-28-44](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/01913529-11b8-4f96-9a3f-f556b352f940)
+
+
+
 <br>
 
 next create a **my_base.sdc** file in openlane/designs/picorv32a/src directory. 
@@ -872,6 +876,7 @@ write the code as given in below image in **my_base.sdc** file.
 
 <br>
 
+![Screenshot from 2024-05-21 13-36-57](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/cd9f4c03-3706-4240-a8b2-9187f6ef295b)
 <br>
 
 Now run sta in this openlane_working_dir/openlane  folder using the command :
@@ -880,6 +885,8 @@ sta pre_sta.conf
 ```
 
 <br>
+
+![Screenshot from 2024-05-21 13-37-31](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/07d91564-f4d0-49c9-9374-f889cf761a1f)
 
 <br>
 
